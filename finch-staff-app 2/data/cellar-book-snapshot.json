@@ -1,0 +1,1733 @@
+{
+ "source": "Bar Finch Cellar Book",
+ "takenAt": "2026-10-29",
+ "shelvesAt": "2026-10-29T17:40:00.000Z",
+ "regionOrder": [
+  "Champagne",
+  "Burgundy",
+  "Beaujolais",
+  "Loire",
+  "Alsace",
+  "Bordeaux",
+  "Rhône",
+  "Provence",
+  "Roussillon",
+  "Coteaux Champenois",
+  "Italy",
+  "Spain",
+  "Portugal",
+  "Austria",
+  "Georgia",
+  "England",
+  "United States"
+ ],
+ "shelves": {
+  "bays": {
+   "2": {
+    "B": [
+     [
+      4,
+      [
+       "w001"
+      ]
+     ],
+     [
+      4,
+      [
+       "w007"
+      ]
+     ]
+    ],
+    "L": [
+     [
+      1,
+      [
+       "w005"
+      ]
+     ],
+     [
+      1,
+      [
+       "w003"
+      ]
+     ],
+     [
+      2,
+      [
+       "w013"
+      ]
+     ],
+     [
+      2,
+      [
+       "w010"
+      ]
+     ],
+     [
+      2,
+      [
+       "w015"
+      ]
+     ]
+    ],
+    "R1": [
+     [
+      0,
+      [
+       "w025",
+       "w024"
+      ]
+     ]
+    ],
+    "R2": [
+     [
+      0,
+      [
+       "w023",
+       "w022"
+      ]
+     ]
+    ],
+    "R3": [
+     [
+      0,
+      [
+       "w021",
+       "w018"
+      ]
+     ]
+    ],
+    "R4": [
+     [
+      0,
+      [
+       "w006"
+      ]
+     ]
+    ],
+    "T": [
+     [
+      1,
+      [
+       "w020"
+      ]
+     ],
+     [
+      1,
+      [
+       "w009"
+      ]
+     ],
+     [
+      2,
+      [
+       "w013"
+      ]
+     ],
+     [
+      2,
+      [
+       "w017"
+      ]
+     ],
+     [
+      2,
+      [
+       "w016"
+      ]
+     ]
+    ]
+   },
+   "3": {
+    "B": [
+     [
+      1,
+      [
+       "w054"
+      ]
+     ],
+     [
+      1,
+      [
+       "w053"
+      ]
+     ],
+     [
+      2,
+      [
+       "w051"
+      ]
+     ],
+     [
+      4,
+      [
+       "w026"
+      ]
+     ]
+    ],
+    "L": [
+     [
+      2,
+      [
+       "w008"
+      ]
+     ],
+     [
+      2,
+      [
+       "w002"
+      ]
+     ],
+     [
+      3,
+      [
+       "w034"
+      ]
+     ],
+     [
+      1,
+      [
+       "w030"
+      ]
+     ]
+    ],
+    "R1": [
+     [
+      0,
+      [
+       "w039",
+       "w041"
+      ]
+     ]
+    ],
+    "R2": [
+     [
+      0,
+      [
+       "w019",
+       "w004"
+      ]
+     ]
+    ],
+    "R3": [
+     [
+      0,
+      [
+       "w014",
+       "w011"
+      ]
+     ]
+    ],
+    "R4": [
+     [
+      0,
+      [
+       "w052"
+      ]
+     ]
+    ],
+    "T": [
+     [
+      4,
+      [
+       "w012"
+      ]
+     ],
+     [
+      2,
+      [
+       "w042"
+      ]
+     ],
+     [
+      2,
+      [
+       "w034"
+      ]
+     ]
+    ]
+   },
+   "4": {
+    "B": [
+     [
+      1,
+      [
+       "w035"
+      ]
+     ],
+     [
+      1,
+      [
+       "w037"
+      ]
+     ],
+     [
+      2,
+      [
+       "w029"
+      ]
+     ],
+     [
+      2,
+      [
+       "w027"
+      ]
+     ],
+     [
+      2,
+      [
+       "w028"
+      ]
+     ]
+    ],
+    "L": [
+     [
+      4,
+      [
+       "w032"
+      ]
+     ],
+     [
+      4,
+      [
+       "w031"
+      ]
+     ]
+    ],
+    "R1": [
+     [
+      0,
+      [
+       "w050",
+       "w049"
+      ]
+     ]
+    ],
+    "R2": [
+     [
+      0,
+      [
+       "w048",
+       "w047"
+      ]
+     ]
+    ],
+    "R3": [
+     [
+      0,
+      [
+       "w046",
+       "w045"
+      ]
+     ]
+    ],
+    "R4": [
+     [
+      0,
+      [
+       "w044",
+       "w043"
+      ]
+     ]
+    ],
+    "T": [
+     [
+      2,
+      [
+       "w040"
+      ]
+     ],
+     [
+      2,
+      [
+       "w038"
+      ]
+     ],
+     [
+      1,
+      [
+       "w033"
+      ]
+     ],
+     [
+      3,
+      [
+       "w036"
+      ]
+     ]
+    ]
+   }
+  },
+  "names": {
+   "w001": "Muscadet",
+   "w002": "Toblino Sauvignon Blanc",
+   "w003": "Albariño",
+   "w004": "Gassmann Riesling",
+   "w005": "Davenport Horsmonden",
+   "w006": "AWM Grüner Veltliner",
+   "w007": "Chablis",
+   "w008": "Etna Bianco",
+   "w009": "Savennières",
+   "w010": "Pessac-Léognan Blanc",
+   "w011": "Soave",
+   "w012": "Finch Bianco",
+   "w013": "Pouilly-Fumé",
+   "w014": "Scarbolo Areore",
+   "w015": "Saint-Romain",
+   "w016": "Chablis 1er Cru Beauroy",
+   "w017": "Châteauneuf-du-Pape Blanc",
+   "w018": "Vinya del Coll",
+   "w019": "Condrieu",
+   "w020": "Sancerre",
+   "w021": "Liquid Farm Chardonnay",
+   "w022": "Chassagne-Montrachet 1er",
+   "w023": "Cervaro della Sala",
+   "w024": "Blanc de Lynch-Bages",
+   "w025": "Corton-Charlemagne",
+   "w026": "Novaia Valpolicella",
+   "w027": "Rasteau",
+   "w028": "Juliénas",
+   "w029": "Toro Dehesa Gago",
+   "w030": "Rosso di Montalcino",
+   "w031": "Coteaux Bourguignons",
+   "w032": "Saint-Émilion",
+   "w033": "Saperavi",
+   "w034": "Finch Rosso",
+   "w035": "Pessac-Léognan",
+   "w036": "Morgon Côte du Py",
+   "w037": "Pomerol",
+   "w038": "Rioja Gran Reserva",
+   "w039": "Amarone",
+   "w040": "Brio de Cantenac Brown",
+   "w041": "Turley Zinfandel",
+   "w042": "Barolo",
+   "w043": "Barbaresco Il Pilone",
+   "w044": "Etna Rosso",
+   "w045": "Brunello di Montalcino",
+   "w046": "Côte-Rôtie",
+   "w047": "Châteauneuf-du-Pape",
+   "w048": "Ambonnay Rouge",
+   "w049": "Volnay Taillepieds",
+   "w050": "Pavillon Rouge",
+   "w051": "Ollières Rosé",
+   "w052": "AWM Karambolage Rosé",
+   "w053": "Tavel",
+   "w054": "Ott Clos Mireille"
+  },
+  "zones": {
+   "2": [
+    [
+     1,
+     4,
+     "Loire & Atlantic"
+    ],
+    [
+     5,
+     8,
+     "Rhône, Bordeaux & Burgundy"
+    ]
+   ],
+   "3": [
+    [
+     1,
+     4,
+     "Italy · white, rosé on the bottom shelf"
+    ],
+    [
+     5,
+     8,
+     "Italy · red"
+    ]
+   ],
+   "4": [
+    [
+     1,
+     4,
+     "Bordeaux & Spain"
+    ],
+    [
+     5,
+     8,
+     "Burgundy, Beaujolais, Rhône & further afield"
+    ]
+   ]
+  }
+ },
+ "wines": [
+  {
+   "id": "w001",
+   "section": "white",
+   "style": "Muscadet",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Château du Coing de St. Fiacre",
+   "cuvee": "Confluentia",
+   "appellation": "Muscadet Sèvre et Maine sur Lie, Loire",
+   "region": "Loire",
+   "menuNote": "",
+   "bottle": 72,
+   "glass": 12,
+   "g175": 17,
+   "carafe": 48
+  },
+  {
+   "id": "w002",
+   "section": "white",
+   "style": "Trentino Sauvignon Blanc",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "",
+   "producer": "Cantina Toblino",
+   "cuvee": "Sauvignon Blanc",
+   "appellation": "Trentino, Italy",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 77,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w003",
+   "section": "white",
+   "style": "Albariño",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "",
+   "producer": "Terras Gauda",
+   "cuvee": "O Rosal Albariño",
+   "appellation": "Rías Baixas, Galicia",
+   "region": "Spain",
+   "menuNote": "",
+   "bottle": 96,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w004",
+   "section": "white",
+   "style": "Riesling",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Rolly Gassmann",
+   "cuvee": "Riesling",
+   "appellation": "Alsace",
+   "region": "Alsace",
+   "menuNote": "",
+   "bottle": 87,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w005",
+   "section": "white",
+   "style": "English White",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Davenport Vineyards",
+   "cuvee": "Horsmonden",
+   "appellation": "Sussex, England",
+   "region": "England",
+   "menuNote": "",
+   "bottle": 100,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w006",
+   "section": "white",
+   "style": "Grüner Veltliner",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "AWM",
+   "cuvee": "Dolce und die Japaner",
+   "appellation": "Grüner Veltliner & Müller-Thurgau, Kamptal",
+   "region": "Austria",
+   "menuNote": "",
+   "bottle": 102,
+   "glass": 17,
+   "g175": 24,
+   "carafe": 68
+  },
+  {
+   "id": "w007",
+   "section": "white",
+   "style": "Chablis",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Domaine Courtault Michelet",
+   "cuvee": "",
+   "appellation": "Chablis, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 120,
+   "glass": 20,
+   "g175": 28,
+   "carafe": 80
+  },
+  {
+   "id": "w008",
+   "section": "white",
+   "style": "Etna Bianco",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "",
+   "producer": "Pietro Caciorgna",
+   "cuvee": "Guardoilvento",
+   "appellation": "Etna Bianco, Sicily",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 107,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w009",
+   "section": "white",
+   "style": "Savennières",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine FL",
+   "cuvee": "La Croix Picot",
+   "appellation": "Savennières, Loire",
+   "region": "Loire",
+   "menuNote": "",
+   "bottle": 139,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w010",
+   "section": "white",
+   "style": "Pessac-Léognan Blanc",
+   "vintage": "2021",
+   "ml": 750,
+   "pour": "COR",
+   "producer": "Château Lamothe Bouscaut",
+   "cuvee": "",
+   "appellation": "Pessac-Léognan Blanc, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 151,
+   "glass": 25,
+   "g175": 35,
+   "carafe": null
+  },
+  {
+   "id": "w011",
+   "section": "white",
+   "style": "Soave",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Le Battistelle",
+   "cuvee": "Roccolo del Durlo",
+   "appellation": "Soave Classico, Veneto",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 134,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w012",
+   "section": "white",
+   "style": "Costa Toscana IGT",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Finch Bianco",
+   "cuvee": "Vermentino",
+   "appellation": "Tuscany",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 114,
+   "glass": 19,
+   "g175": 27,
+   "carafe": 76
+  },
+  {
+   "id": "w013",
+   "section": "white",
+   "style": "Pouilly-Fumé",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Jonathan Didier Pabiot",
+   "cuvee": "Léon",
+   "appellation": "Pouilly-Fumé, Loire",
+   "region": "Loire",
+   "menuNote": "",
+   "bottle": 139,
+   "glass": 23,
+   "g175": 32,
+   "carafe": 92
+  },
+  {
+   "id": "w014",
+   "section": "white",
+   "style": "Friuli White",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Scarbolo",
+   "cuvee": "Areore",
+   "appellation": "Friuli, Italy",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 150,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w015",
+   "section": "white",
+   "style": "Saint-Romain Blanc",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Germain",
+   "cuvee": "",
+   "appellation": "Saint-Romain, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 151,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w016",
+   "section": "white",
+   "style": "Chablis 1er Cru",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Garnier",
+   "cuvee": "Beauroy 1er Cru",
+   "appellation": "Chablis, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 187,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w017",
+   "section": "white",
+   "style": "Châteauneuf-du-Pape Blanc",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "COR",
+   "producer": "Domaine Saint-Michel",
+   "cuvee": "",
+   "appellation": "Châteauneuf-du-Pape Blanc, Rhône",
+   "region": "Rhône",
+   "menuNote": "",
+   "bottle": 197,
+   "glass": 33,
+   "g175": 46,
+   "carafe": null
+  },
+  {
+   "id": "w018",
+   "section": "white",
+   "style": "White (Catalonia)",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Pastorello y Raventós",
+   "cuvee": "Vinya del Coll",
+   "appellation": "Catalunya",
+   "region": "Spain",
+   "menuNote": "",
+   "bottle": 199,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w019",
+   "section": "white",
+   "style": "Condrieu",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "",
+   "producer": "Yves Cuilleron",
+   "cuvee": "La Petite Côte",
+   "appellation": "Condrieu, Rhône",
+   "region": "Rhône",
+   "menuNote": "",
+   "bottle": 190,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w020",
+   "section": "white",
+   "style": "Sancerre",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Claude Riffault",
+   "cuvee": "Les Denisottes",
+   "appellation": "Sancerre, Loire",
+   "region": "Loire",
+   "menuNote": "",
+   "bottle": 191,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w021",
+   "section": "white",
+   "style": "Chardonnay (California)",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Liquid Farm",
+   "cuvee": "White Hill",
+   "appellation": "Sta. Rita Hills, California",
+   "region": "United States",
+   "menuNote": "",
+   "bottle": 206,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w022",
+   "section": "white",
+   "style": "Chassagne-Montrachet",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Thomas Morey",
+   "cuvee": "Les Chenevottes 1er Cru",
+   "appellation": "Chassagne-Montrachet, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 227,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w023",
+   "section": "white",
+   "style": "Cervaro",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Castello della Sala",
+   "cuvee": "Cervaro della Sala",
+   "appellation": "Umbria, Italy",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 252,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w024",
+   "section": "white",
+   "style": "Bordeaux Blanc",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "",
+   "producer": "Château Lynch-Bages",
+   "cuvee": "Blanc de Lynch-Bages",
+   "appellation": "",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 256,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w025",
+   "section": "white",
+   "style": "Corton-Charlemagne Grand Cru",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "COR",
+   "producer": "Domaine Berthelemot",
+   "cuvee": "",
+   "appellation": "Corton-Charlemagne Grand Cru, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 379,
+   "glass": 63,
+   "g175": 88,
+   "carafe": null
+  },
+  {
+   "id": "w026",
+   "section": "red",
+   "style": "Valpolicella",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Novaia",
+   "cuvee": "",
+   "appellation": "Valpolicella Classico, Veneto",
+   "region": "Italy",
+   "menuNote": "also served chilled",
+   "bottle": 72,
+   "glass": 12,
+   "g175": 17,
+   "carafe": 48
+  },
+  {
+   "id": "w027",
+   "section": "red",
+   "style": "Rasteau",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine des Escaravailles",
+   "cuvee": "Les Coteaux",
+   "appellation": "Rasteau, Rhône",
+   "region": "Rhône",
+   "menuNote": "",
+   "bottle": 95,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w028",
+   "section": "red",
+   "style": "Juliénas (Beaujolais Cru)",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Boischampt",
+   "cuvee": "",
+   "appellation": "Juliénas, Beaujolais",
+   "region": "Beaujolais",
+   "menuNote": "",
+   "bottle": 80,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w029",
+   "section": "red",
+   "style": "Toro",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "",
+   "producer": "Telmo Rodríguez",
+   "cuvee": "Dehesa Gago",
+   "appellation": "Toro, Castilla y León",
+   "region": "Spain",
+   "menuNote": "",
+   "bottle": 83,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w030",
+   "section": "red",
+   "style": "Rosso di Montalcino",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Cortonesi",
+   "cuvee": "",
+   "appellation": "Rosso di Montalcino, Tuscany",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 91,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w031",
+   "section": "red",
+   "style": "Coteaux Bourguignons",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Domaine Stéphane Magnien",
+   "cuvee": "Pur Pinot Noir",
+   "appellation": "Coteaux Bourguignons, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 101,
+   "glass": 17,
+   "g175": 24,
+   "carafe": 67
+  },
+  {
+   "id": "w032",
+   "section": "red",
+   "style": "Saint-Émilion (under £18)",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "La Croix Chantecaille",
+   "cuvee": "",
+   "appellation": "Saint-Émilion Grand Cru, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 120,
+   "glass": 20,
+   "g175": 28,
+   "carafe": 80
+  },
+  {
+   "id": "w033",
+   "section": "red",
+   "style": "Saperavi (Qvevri, Georgia)",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "",
+   "producer": "Khaketi",
+   "cuvee": "Saperavi Qvevri",
+   "appellation": "Kakheti, Georgia",
+   "region": "Georgia",
+   "menuNote": "",
+   "bottle": 139,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w034",
+   "section": "red",
+   "style": "Costa Toscana IGT",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Finch Rosso",
+   "cuvee": "Sangiovese",
+   "appellation": "Tuscany",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 114,
+   "glass": 19,
+   "g175": 27,
+   "carafe": 76
+  },
+  {
+   "id": "w035",
+   "section": "red",
+   "style": "Pessac-Léognan",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "",
+   "producer": "Château Lamothe Bouscaut",
+   "cuvee": "",
+   "appellation": "Pessac-Léognan, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 135,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w036",
+   "section": "red",
+   "style": "Morgon (Beaujolais Cru)",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Jean-Marc Burgaud",
+   "cuvee": "Côte du Py",
+   "appellation": "Morgon, Beaujolais",
+   "region": "Beaujolais",
+   "menuNote": "",
+   "bottle": 138,
+   "glass": 23,
+   "g175": 32,
+   "carafe": 92
+  },
+  {
+   "id": "w037",
+   "section": "red",
+   "style": "Pomerol",
+   "vintage": "2018",
+   "ml": 750,
+   "pour": "",
+   "producer": "Château Feytit Guillot",
+   "cuvee": "",
+   "appellation": "Pomerol, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 135,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w038",
+   "section": "red",
+   "style": "Rioja",
+   "vintage": "2004",
+   "ml": 750,
+   "pour": "COR",
+   "producer": "Bodegas Urbina",
+   "cuvee": "Gran Reserva Especial",
+   "appellation": "Rioja",
+   "region": "Spain",
+   "menuNote": "",
+   "bottle": 150,
+   "glass": 25,
+   "g175": 35,
+   "carafe": null
+  },
+  {
+   "id": "w039",
+   "section": "red",
+   "style": "Amarone della Valpolicella (Speri requested - not available)",
+   "vintage": "2021",
+   "ml": 750,
+   "pour": "",
+   "producer": "Novaia",
+   "cuvee": "",
+   "appellation": "Amarone della Valpolicella Classico, Veneto",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 181,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w040",
+   "section": "red",
+   "style": "Margaux (2nd wine, under £30)",
+   "vintage": "2019",
+   "ml": 750,
+   "pour": "",
+   "producer": "Château Cantenac Brown",
+   "cuvee": "Brio",
+   "appellation": "Margaux, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 157,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w041",
+   "section": "red",
+   "style": "Zinfandel (California)",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Turley Cellars",
+   "cuvee": "Old Vines Zinfandel",
+   "appellation": "California",
+   "region": "United States",
+   "menuNote": "",
+   "bottle": 170,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w042",
+   "section": "red",
+   "style": "Barolo",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "COR",
+   "producer": "Elvio Cogno",
+   "cuvee": "Cascina Nuova",
+   "appellation": "Barolo, Piedmont",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 180,
+   "glass": 30,
+   "g175": 42,
+   "carafe": null
+  },
+  {
+   "id": "w043",
+   "section": "red",
+   "style": "Barbaresco",
+   "vintage": "2021",
+   "ml": 750,
+   "pour": "",
+   "producer": "Cascina Vano",
+   "cuvee": "Il Pilone Riserva",
+   "appellation": "Barbaresco, Piedmont",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 187,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w044",
+   "section": "red",
+   "style": "Etna Rosso",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "",
+   "producer": "Pietro Caciorgna",
+   "cuvee": "N’Anticchia",
+   "appellation": "Etna Rosso, Sicily",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 188,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w045",
+   "section": "red",
+   "style": "Brunello di Montalcino",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "",
+   "producer": "Cerbaia",
+   "cuvee": "",
+   "appellation": "Brunello di Montalcino, Tuscany",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 205,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w046",
+   "section": "red",
+   "style": "Côte-Rôtie",
+   "vintage": "2018",
+   "ml": 750,
+   "pour": "",
+   "producer": "Jean-Luc Jamet",
+   "cuvee": "",
+   "appellation": "Côte-Rôtie, Rhône",
+   "region": "Rhône",
+   "menuNote": "",
+   "bottle": 216,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w047",
+   "section": "red",
+   "style": "Châteauneuf-du-Pape",
+   "vintage": "2019",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine de la Mordorée",
+   "cuvee": "La Reine des Bois",
+   "appellation": "Châteauneuf-du-Pape, Rhône",
+   "region": "Rhône",
+   "menuNote": "",
+   "bottle": 237,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w048",
+   "section": "red",
+   "style": "Coteaux Champenois Red",
+   "vintage": "2018",
+   "ml": 750,
+   "pour": "",
+   "producer": "Gonet-Médeville",
+   "cuvee": "Cuvée Athénaïs",
+   "appellation": "Ambonnay Rouge, Coteaux Champenois",
+   "region": "Coteaux Champenois",
+   "menuNote": "",
+   "bottle": 243,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w049",
+   "section": "red",
+   "style": "Volnay",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine de Montille",
+   "cuvee": "Les Taillepieds 1er Cru",
+   "appellation": "Volnay, Burgundy",
+   "region": "Burgundy",
+   "menuNote": "",
+   "bottle": 375,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w050",
+   "section": "red",
+   "style": "Margaux (2nd wine)",
+   "vintage": "2008",
+   "ml": 750,
+   "pour": "COR",
+   "producer": "Château Margaux",
+   "cuvee": "Pavillon Rouge",
+   "appellation": "Margaux, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 380,
+   "glass": 63,
+   "g175": 88,
+   "carafe": null
+  },
+  {
+   "id": "w051",
+   "section": "rose",
+   "style": "Provence Rosé",
+   "vintage": "2025",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Château d’Ollières",
+   "cuvee": "",
+   "appellation": "Coteaux Varois en Provence",
+   "region": "Provence",
+   "menuNote": "",
+   "bottle": 72,
+   "glass": 12,
+   "g175": 17,
+   "carafe": 48
+  },
+  {
+   "id": "w052",
+   "section": "rose",
+   "style": "Zweigelt Rosé",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "AWM",
+   "cuvee": "Karambolage Rosé",
+   "appellation": "Grüner Veltliner & Zweigelt, Kamptal",
+   "region": "Austria",
+   "menuNote": "",
+   "bottle": 114,
+   "glass": 19,
+   "g175": 27,
+   "carafe": 76
+  },
+  {
+   "id": "w053",
+   "section": "rose",
+   "style": "Tavel Rosé (aged)",
+   "vintage": "2023",
+   "ml": 750,
+   "pour": "",
+   "producer": "Château d’Aquéria",
+   "cuvee": "Héritage",
+   "appellation": "Tavel, Rhône",
+   "region": "Rhône",
+   "menuNote": "",
+   "bottle": 143,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w054",
+   "section": "rose",
+   "style": "Côtes de Provence Rosé",
+   "vintage": "2024",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Ott",
+   "cuvee": "Clos Mireille",
+   "appellation": "Côtes de Provence",
+   "region": "Provence",
+   "menuNote": "",
+   "bottle": 146,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w055",
+   "section": "sparkling",
+   "style": "Franciacorta",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Corteaura",
+   "cuvee": "",
+   "appellation": "Franciacorta DOCG, Lombardy",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 103,
+   "glass": 17,
+   "g175": 24,
+   "carafe": null
+  },
+  {
+   "id": "w056",
+   "section": "sparkling",
+   "style": "Vouvray Brut",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Domaine Breton",
+   "cuvee": "La Dilettante",
+   "appellation": "Vouvray Brut, Loire",
+   "region": "Loire",
+   "menuNote": "",
+   "bottle": 120,
+   "glass": 20,
+   "g175": 28,
+   "carafe": null
+  },
+  {
+   "id": "w057",
+   "section": "sparkling",
+   "style": "English Sparkling",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "",
+   "producer": "Herbert Hall",
+   "cuvee": "Brut",
+   "appellation": "Kent, England",
+   "region": "England",
+   "menuNote": "",
+   "bottle": 147,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w058",
+   "section": "sparkling",
+   "style": "Champagne",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Billecart-Salmon",
+   "cuvee": "Brut Réserve",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 144,
+   "glass": 24,
+   "g175": 34,
+   "carafe": null
+  },
+  {
+   "id": "w059",
+   "section": "sparkling",
+   "style": "English Sparkling Rosé",
+   "vintage": "2022",
+   "ml": 750,
+   "pour": "",
+   "producer": "Herbert Hall",
+   "cuvee": "Brut Rosé",
+   "appellation": "Kent, England",
+   "region": "England",
+   "menuNote": "",
+   "bottle": 162,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w060",
+   "section": "sparkling",
+   "style": "Blanc de Blancs",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Bonnet Gilmert",
+   "cuvee": "La Réserve",
+   "appellation": "Blanc de Blancs Grand Cru, Oger, Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 193,
+   "glass": 32,
+   "g175": 45,
+   "carafe": null
+  },
+  {
+   "id": "w061",
+   "section": "sparkling",
+   "style": "Champagne",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Pol Roger",
+   "cuvee": "Brut Réserve",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 181,
+   "glass": 30,
+   "g175": 42,
+   "carafe": null
+  },
+  {
+   "id": "w062",
+   "section": "sparkling",
+   "style": "Blanc de Noirs",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "",
+   "producer": "Domaine Eric Taillet",
+   "cuvee": "Exclusivi’T",
+   "appellation": "Blanc de Noirs Extra-Brut, Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 209,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w063",
+   "section": "sparkling",
+   "style": "Champagne Rosé",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "",
+   "producer": "Billecart-Salmon",
+   "cuvee": "Brut Rosé",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 181,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w064",
+   "section": "sparkling",
+   "style": "Champagne",
+   "vintage": "2018",
+   "ml": 750,
+   "pour": "",
+   "producer": "Pol Roger",
+   "cuvee": "Brut Vintage",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 236,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w065",
+   "section": "sparkling",
+   "style": "Champagne Rosé",
+   "vintage": "2019",
+   "ml": 750,
+   "pour": "",
+   "producer": "Pol Roger",
+   "cuvee": "Vintage Rosé",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 322,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w066",
+   "section": "sparkling",
+   "style": "Champagne (prestige cuvée)",
+   "vintage": "2015",
+   "ml": 750,
+   "pour": "",
+   "producer": "Pol Roger",
+   "cuvee": "Sir Winston Churchill",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 539,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w067",
+   "section": "sparkling",
+   "style": "Champagne (prestige cuvée)",
+   "vintage": "2015",
+   "ml": 750,
+   "pour": "",
+   "producer": "Louis Roederer",
+   "cuvee": "Cristal",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 586,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w068",
+   "section": "sweet",
+   "style": "Maury (Vin Doux Naturel)",
+   "vintage": "2023",
+   "ml": 375,
+   "pour": "",
+   "producer": "Domaine Mas Amiel",
+   "cuvee": "",
+   "appellation": "Maury, Roussillon",
+   "region": "Roussillon",
+   "menuNote": "",
+   "bottle": 79,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w069",
+   "section": "sweet",
+   "style": "White Port",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Niepoort",
+   "cuvee": "White Port",
+   "appellation": "Douro, Portugal",
+   "region": "Portugal",
+   "menuNote": "",
+   "bottle": 120,
+   "glass": 12,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w070",
+   "section": "sweet",
+   "style": "Late Bottled Vintage Port",
+   "vintage": "2020",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Niepoort",
+   "cuvee": "Late Bottled Vintage",
+   "appellation": "Douro, Portugal",
+   "region": "Portugal",
+   "menuNote": "",
+   "bottle": 129,
+   "glass": 13,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w071",
+   "section": "sweet",
+   "style": "Sauternes",
+   "vintage": "2018",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Château Rabaud-Promis",
+   "cuvee": "Promesse",
+   "appellation": "Sauternes, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 119,
+   "glass": 12,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w072",
+   "section": "sweet",
+   "style": "Barsac (1er Cru Classé)",
+   "vintage": "2009",
+   "ml": 375,
+   "pour": "",
+   "producer": "Château Climens",
+   "cuvee": "",
+   "appellation": "Barsac 1er Cru Classé, Bordeaux",
+   "region": "Bordeaux",
+   "menuNote": "",
+   "bottle": 93,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w073",
+   "section": "sweet",
+   "style": "Coteaux du Layon",
+   "vintage": "2022",
+   "ml": 500,
+   "pour": "",
+   "producer": "Pierre Bise",
+   "cuvee": "Les Rouannières",
+   "appellation": "Coteaux du Layon, Loire",
+   "region": "Loire",
+   "menuNote": "",
+   "bottle": 134,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w074",
+   "section": "sweet",
+   "style": "Colheita White Port",
+   "vintage": "2012",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Niepoort",
+   "cuvee": "Colheita White Port",
+   "appellation": "Douro, Portugal",
+   "region": "Portugal",
+   "menuNote": "",
+   "bottle": 170,
+   "glass": 17,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w075",
+   "section": "sweet",
+   "style": "Vin Santo di Montepulciano",
+   "vintage": "2018",
+   "ml": 375,
+   "pour": "Y",
+   "producer": "Caterina Dei",
+   "cuvee": "",
+   "appellation": "Vin Santo di Montepulciano, Tuscany",
+   "region": "Italy",
+   "menuNote": "",
+   "bottle": 193,
+   "glass": 39,
+   "g175": null,
+   "carafe": null
+  }
+ ]
+}
