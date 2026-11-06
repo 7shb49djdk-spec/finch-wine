@@ -182,7 +182,7 @@ def build():
     still = [x for x in wines if x['glass'] and x['section'] in ('white', 'red', 'rose')]
     spk = [x for x in wines if x['glass'] and x['section'] == 'sparkling']
     need(P['w055']['glass'] == min(x['glass'] for x in spk), 'Franciacorta is no longer the cheapest glass of fizz')
-    need(P['w061']['glass'] > P['w058']['glass'], 'Pol Roger is no longer a step up from the Billecart by the glass')
+    need(P['w061']['glass'] > P['w076']['glass'], 'Pol Roger is no longer a step up from the house Devaux by the glass')
     need(P['w051']['glass'] == min(x['glass'] for x in still), 'Ollières is no longer the entry glass')
     need(P['w012']['glass'] == P['w034']['glass'], 'house white and house red are no longer the same glass price')
     need(btg('w013'), 'the Pabiot is no longer by the glass: rewrite the Sancerre guidance')
@@ -209,7 +209,7 @@ def build():
                 problems.append(f'{where}: names {wid}, which is not on the list')
                 return '?'
             nm = W[wid]['short']
-            return nm if plain else f'<a class="wl" href="#/info/wine/{wid}">{html.escape(nm)}</a>'
+            return nm if plain else f'<a class="wl" href="#info-wine-{wid}">{html.escape(nm)}</a>'
         return re.sub(r'\{w:(w\d{3})\}', rep, t)
     courses = []
     for c in COURSES:

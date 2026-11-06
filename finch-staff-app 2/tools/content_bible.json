@@ -61,27 +61,6 @@
    "https://worldoffinewine.com/news-features/herbert-hall-kent-wine"
   ]
  },
- "w058": {
-  "food": [
-   "Aperitif with gougères",
-   "Oysters or langoustines",
-   "Sea bream or sea bass crudo",
-   "Smoked salmon with crème fraîche"
-  ],
-  "abv": "12%",
-  "style": {
-   "profile": "Fresh & citrus fizz",
-   "body": "light",
-   "sweetness": "dry",
-   "acidity": "high",
-   "oak": "subtle"
-  },
-  "sources": [
-   "https://www.tysonstelzer.com/billecart-salmon-la-revolution-de-le-reserve/",
-   "https://www.mtouton.com/products/france/champagne/15251-nv/billecart-salmon-le-reserve",
-   "https://leaandsandeman.co.uk/wine/BILLECART-SALMON-Rose-Brut-Champagne-Billecart-Salmon-NV-1548-00.html"
-  ]
- },
  "w059": {
   "food": [
    "Salmon or trout tartare",
@@ -1614,5 +1593,86 @@
    "https://www.leaandsandeman.co.uk/wine/2018-VIN-SANTO-DI-MONTEPULCIANO-Cantine-Dei-67386-00.html?pack=47836",
    "https://aisitalia.it/Disciplinari/Toscana/DOC/Vin Santo di Montepulciano.pdf"
   ]
+ },
+ "w076": {
+  "food": [
+   "Aperitif with gougères",
+   "Fried chicken or tempura",
+   "Roast chicken",
+   "Aged Comté"
+  ],
+  "abv": "12%",
+  "style": {
+   "profile": "Rich & toasty fizz",
+   "body": "medium",
+   "sweetness": "dry",
+   "acidity": "medium",
+   "oak": "subtle"
+  },
+  "sources": [
+   "https://www.libertywines.co.uk/our-portfolio/DE104-cuvee-d-aged-5-years",
+   "https://www.libertywines.co.uk/our-producers/GDE03FR-devaux"
+  ]
+ },
+ "w077": {
+  "food": [
+   "Salmon or tuna tartare",
+   "Duck breast",
+   "Charcuterie",
+   "Strawberries"
+  ],
+  "abv": "12%",
+  "style": {
+   "profile": "Rosé fizz",
+   "body": "light",
+   "sweetness": "dry",
+   "acidity": "high",
+   "oak": "none"
+  },
+  "sources": [
+   "https://www.libertywines.co.uk/our-portfolio/DE105-d-rose-aged-5-years",
+   "https://www.libertywines.co.uk/our-producers/GDE03FR-devaux"
+  ]
+ },
+ "w078": {
+  "food": [
+   "Sharing plates for the table",
+   "Roast chicken",
+   "Fried chicken or tempura",
+   "Aged Comté"
+  ],
+  "abv": "12%",
+  "style": {
+   "profile": "Rich & toasty fizz",
+   "body": "medium",
+   "sweetness": "dry",
+   "acidity": "medium",
+   "oak": "subtle"
+  },
+  "sources": [
+   "https://www.libertywines.co.uk/our-portfolio/DE104-cuvee-d-aged-5-years",
+   "https://www.libertywines.co.uk/our-producers/GDE03FR-devaux"
+  ]
+ },
+ "w079": {
+  "food": [
+   "Scallops with truffle",
+   "Soft-shell crab",
+   "Grilled or gratinated oysters",
+   "Roast capon or chicken"
+  ],
+  "abv": "12%",
+  "style": {
+   "profile": "Rich & toasty fizz",
+   "body": "full",
+   "sweetness": "dry",
+   "acidity": "high",
+   "oak": "noticeable"
+  },
+  "sources": [
+   "https://www.chapoutier.com/media/produit_ft_import/FT Stenope 2013 EN.pdf",
+   "https://www.libertywines.co.uk/our-portfolio/DE116-stenope"
+  ],
+  "vintageNote": "2013 was a late harvest after a wet spring; a warm, dry July and August ripened the grapes well."
  }
 }

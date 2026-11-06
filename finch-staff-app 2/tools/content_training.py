@@ -48,14 +48,15 @@ COURSES = [
   dict(id='styles', title='Styles on our list', blurb='Every wine on the list grouped by what it tastes like, with what to say and what it goes with.', lessons=[
     dict(id='fizz', title='Champagne and sparkling', profiles=['Fresh & citrus fizz', 'Rich & toasty fizz', 'Rosé fizz'], cards=[
       ('How the bubbles get there', 'All our sparkling wines are made by the <b>traditional method</b>: a still wine is bottled with a little yeast and sugar, ferments again in the bottle, and the gas stays trapped as bubbles. This is how Champagne, Franciacorta, Vouvray Brut and English sparkling are made. Prosecco is different: its second fermentation happens in a big tank, which keeps it simpler and fruitier.'),
-      ('Fresh and citrus', 'Lighter, zesty, lemon and green apple: the {w:w055}, the {w:w057}, the {w:w058}. A good start to the evening and with oysters or raw fish.'),
-      ('Rich and toasty', 'More time on the lees or more Pinot Noir gives brioche, toast, nuts and a rounder feel: the {w:w061}, the vintage Pol Roger and the {w:w066}. Good with richer starters and as a celebration bottle.'),
+      ('Fresh and citrus', 'Lighter, zesty, lemon and green apple: the {w:w055}, the {w:w057}, the {w:w060}. A good start to the evening and with oysters or raw fish.'),
+      ('Rich and toasty', 'More time on the lees or more Pinot Noir gives brioche, toast, nuts and a rounder feel: our house {w:w076} (five years on the lees), the {w:w061} and the {w:w066}. Good with richer starters and as a celebration bottle.'),
+      ('Pink fizz', 'Most rosé Champagne gets its colour from a little still red Pinot Noir blended in. Red berries, still dry. By the glass, the {w:w077}; by the bottle, the {w:w063}, the {w:w059} from Kent and the {w:w065}.'),
       ('Words on the label', '<b>NV</b> (non-vintage) blends several years for a consistent house style. <b>Vintage</b> is one good year only. <b>Blanc de Blancs</b> is white grapes only, Chardonnay ({w:w060}). <b>Blanc de Noirs</b> is black grapes only ({w:w062}, all Meunier). <b>Grower</b> Champagne is made by the family that grows the grapes.'),
       ('No carafes, no Coravin', 'Sparkling is sold by the glass or the bottle only: it goes flat in a carafe. None of the Champagnes is on the Coravin.'),
     ], quiz=[
       ('How do the bubbles get into Champagne?', ['A second fermentation in the bottle', 'Gas is added before bottling', 'A second fermentation in a big tank', 'The grapes are picked early'], 0, 'That is the traditional method. Prosecco does its second fermentation in a tank.'),
       ('“Blanc de Blancs” means…', ['Made from white grapes only', 'Made from black grapes only', 'Made in one year only', 'Very dry'], 0, 'White grapes only, which in Champagne means Chardonnay.'),
-      ('Which of our Champagnes is made only from Pinot Meunier?', ['{w:w062}', '{w:w058}', '{w:w060}', '{w:w067}'], 0, 'Taillet Exclusivi’T is a Blanc de Noirs from Meunier alone.'),
+      ('Which of our Champagnes is made only from Pinot Meunier?', ['{w:w062}', '{w:w076}', '{w:w060}', '{w:w067}'], 0, 'Taillet Exclusivi’T is a Blanc de Noirs from Meunier alone.'),
       ('Why is there no carafe of sparkling wine?', ['It would go flat', 'It is too expensive', 'The Coravin is used instead', 'It must be served in the bottle by law'], 0, 'A carafe lets the bubbles escape.'),
     ]),
     dict(id='crisp', title='Crisp and mineral whites', profiles=['Crisp & mineral white'], cards=[
@@ -163,7 +164,7 @@ COURSES = [
       ('By the sea', '<b>Albariño</b> (Galicia): peach, citrus and a salty finish ({w:w003}). <b>Vermentino</b> (coastal Italy): citrus, herbs and almond, our house white {w:w012}. <b>Melon de Bourgogne</b> (Muscadet): light, neutral, salty-fresh ({w:w001}).'),
       ('English aromatics', 'Bacchus and other cool-climate grapes: elderflower, hedgerow, citrus ({w:w005}).'),
     ], quiz=[
-      ('Which grape is our house white, Finch Bianco?', ['Vermentino', 'Chardonnay', 'Pinot Grigio', 'Sauvignon Blanc'], 0, 'Finch Bianco is Montefoscoli\'s Tuscan Vermentino.'),
+      ('Which grape is our house white, the Montefoscoli Fontemaggiore?', ['Vermentino', 'Chardonnay', 'Pinot Grigio', 'Sauvignon Blanc'], 0, 'It is Montefoscoli\'s Tuscan Vermentino.'),
       ('Condrieu is made from…', ['Viognier', 'Riesling', 'Chardonnay', 'Chenin Blanc'], 0, 'Apricot and blossom.'),
       ('Which grape often has a white-pepper note?', ['Grüner Veltliner', 'Viognier', 'Albariño', 'Melon de Bourgogne'], 0, 'Pepper is Grüner\'s calling card.'),
     ]),
@@ -176,7 +177,7 @@ COURSES = [
       ('Xarel·lo is best known as a grape for…', ['Cava', 'Champagne', 'Port', 'Rioja'], 0, 'The Vinya del Coll shows what it does as a still wine.'),
       ('Which white on our list grows on a volcano?', ['{w:w008}', '{w:w011}', '{w:w014}', '{w:w018}'], 0, 'Etna. (The Soave is from old volcanic hills too, but Etna is an active volcano.)'),
     ]),
-    dict(id='pinot', title='Pinot Noir and Gamay', wines=['w031', 'w049', 'w048', 'w028', 'w036', 'w061', 'w058', 'w062'], cards=[
+    dict(id='pinot', title='Pinot Noir and Gamay', wines=['w031', 'w049', 'w048', 'w028', 'w036', 'w061', 'w076', 'w062'], cards=[
       ('Pinot Noir', 'Light to medium body, low tannin, high acidity: red cherry, raspberry, earth, mushroom with age. Burgundy is its home: {w:w031} and {w:w049}. From Champagne, as a still red, it is a real rarity: {w:w048}.'),
       ('Pinot in Champagne', 'Pinot Noir and Pinot Meunier are the two black Champagne grapes. They give body and red fruit; Meunier is the fruitier one ({w:w062} is all Meunier).'),
       ('Gamay', 'The Beaujolais grape: juicy red fruit, very low tannin, often good lightly chilled. The cru villages make the serious ones: {w:w028} is fresh and light, {w:w036} is the deepest and firmest.'),
@@ -209,7 +210,7 @@ COURSES = [
       ('Nerello Mascalese', 'Etna\'s red: pale, red-fruited, mineral, often compared to Pinot Noir ({w:w044}).'),
     ], quiz=[
       ('Barolo and Barbaresco are made from…', ['Nebbiolo', 'Sangiovese', 'Corvina', 'Barbera'], 0, 'Both are Nebbiolo from Piedmont.'),
-      ('Our house red, Finch Rosso, is made from…', ['Sangiovese', 'Nebbiolo', 'Merlot', 'Corvina'], 0, 'Montefoscoli\'s Tuscan Sangiovese.'),
+      ('Our house red, the Montefoscoli Santandrea, is made from…', ['Sangiovese', 'Nebbiolo', 'Merlot', 'Corvina'], 0, 'Montefoscoli\'s Tuscan Sangiovese.'),
       ('Amarone and Valpolicella share the same grape. What makes Amarone different?', ['The grapes are dried first', 'It is from Sicily', 'It is aged in new oak only', 'It is fortified'], 0, 'Appassimento: drying concentrates everything.'),
     ]),
     dict(id='worldreds', title='Tempranillo, Zinfandel and Saperavi', wines=['w038', 'w029', 'w041', 'w033', 'w070'], cards=[
@@ -223,15 +224,15 @@ COURSES = [
   ]),
 
   dict(id='regions', title='Regions on our list', blurb='Where our wines come from, and what each place is known for.', lessons=[
-    dict(id='champagne', title='Champagne', wines=['w058', 'w061', 'w060', 'w062', 'w063', 'w064', 'w065', 'w066', 'w067', 'w048'], cards=[
+    dict(id='champagne', title='Champagne', wines=['w076', 'w077', 'w061', 'w060', 'w062', 'w063', 'w064', 'w065', 'w079', 'w066', 'w067', 'w048'], cards=[
       ('Where it is', 'The northernmost of France\'s great regions, east of Paris around Reims and Épernay. Cold, with chalk soils that keep vines fed with water and give the wines their fine, chalky finish.'),
       ('The grapes', 'Three main grapes: Chardonnay, Pinot Noir and Pinot Meunier. Most Champagnes blend all three.'),
-      ('Houses and growers', 'The big houses buy grapes from many growers and blend for a consistent style: Billecart-Salmon ({w:w058}), Pol Roger ({w:w061}), Roederer ({w:w067}). Growers make wine only from their own vines: {w:w060}, {w:w062}.'),
-      ('Prestige cuvées', 'Each house\'s top wine, made only in great years: {w:w066} and {w:w067}.'),
+      ('Houses and growers', 'The big houses buy grapes from many growers and blend for a consistent style: Devaux ({w:w076}), Pol Roger ({w:w061}), Billecart-Salmon ({w:w063}), Roederer ({w:w067}). Growers make wine only from their own vines: {w:w060}, {w:w062}.'),
+      ('Prestige cuvées', 'Each house\'s top wine, made in small quantities from its best grapes: {w:w066}, {w:w067}, and the {w:w079}, which Devaux makes with the Rhône winemaker Michel Chapoutier.'),
       ('Still wine too', 'Champagne also makes a little still wine, Coteaux Champenois, like the red {w:w048}.'),
     ], quiz=[
       ('What are the three main Champagne grapes?', ['Chardonnay, Pinot Noir, Pinot Meunier', 'Chardonnay, Sauvignon Blanc, Pinot Noir', 'Pinot Noir, Gamay, Chardonnay', 'Chardonnay, Chenin Blanc, Riesling'], 0, 'Most Champagnes blend all three.'),
-      ('Which of these is a grower Champagne?', ['{w:w060}', '{w:w058}', '{w:w061}', '{w:w067}'], 0, 'Bonnet-Gilmert makes wine from its own vines.'),
+      ('Which of these is a grower Champagne?', ['{w:w060}', '{w:w076}', '{w:w061}', '{w:w067}'], 0, 'Bonnet-Gilmert makes wine from its own vines.'),
       ('Champagne\'s soil is famous for being…', ['Chalk', 'Volcanic', 'Granite', 'Sand'], 0, 'Chalk.'),
     ]),
     dict(id='burgundy', title='Burgundy and Beaujolais', wines=['w007', 'w016', 'w015', 'w022', 'w025', 'w031', 'w049', 'w028', 'w036'], cards=[

@@ -30,7 +30,7 @@
   function rowClass(w) { return w.pour === 'COR' ? ' is-cor' : (w.pour === 'Y' ? ' is-btg' : ''); }
   function howServed(w) { return w.pour === 'COR' ? 'By the glass, on the Coravin' : (w.pour === 'Y' ? 'By the glass' : 'Bottle only'); }
   function bottleLabel(w) { return w.size ? w.size.replace(/ \(.*\)/, '') : 'Bottle'; }
-  function wineHref(id) { return '#/info/wine/' + id; }
+  function wineHref(id) { return '#info-wine-' + id; }
   function toast(msg, action, fn) {
     var t = document.getElementById('toast');
     t.innerHTML = '<span>' + esc(msg) + '</span>' + (action ? '<button type="button">' + esc(action) + '</button>' : '');
@@ -49,8 +49,8 @@
     cards: '<rect x="3" y="5" width="13" height="16" rx="2"/><path d="M8 3h11a2 2 0 0 1 2 2v14"/>'
   };
   var TABS = {
-    info: [['#/info', 'wines', 'Wines'], ['#/info/glass', 'glass', 'By the glass'], ['#/info/guests', 'guests', 'Guests'], ['#/info/ref', 'ref', 'Reference']],
-    train: [['#/train', 'courses', 'Courses'], ['#/train/quiz', 'quiz', 'Quizzes'], ['#/train/cards', 'cards', 'Flashcards']]
+    info: [['#info', 'wines', 'Wines'], ['#info-glass', 'glass', 'By the glass'], ['#info-guests', 'guests', 'Guests'], ['#info-ref', 'ref', 'Reference']],
+    train: [['#train', 'courses', 'Courses'], ['#train-quiz', 'quiz', 'Quizzes'], ['#train-cards', 'cards', 'Flashcards']]
   };
   function drawChrome(mode, tab) {
     document.querySelectorAll('.modes a').forEach(function (a) {
@@ -64,12 +64,13 @@
   }
 
   /* ---------- router ---------- */
-  var LEGACY = { wines: '#/info', glass: '#/info/glass', guests: '#/info/guests', guide: '#/info/ref' };
+  var LEGACY = { wines: '#info', glass: '#info-glass', guests: '#info-guests', guide: '#info-ref' };
   var after = null, keepScroll = false;
   function route() {
-    var h = (location.hash || '#/info').replace(/^#\/?/, '');
-    var p = h.split('/');
-    if (LEGACY[p[0]]) { location.replace(p[0] === 'guide' && p[1] ? '#/info/ref/' + p[1] : LEGACY[p[0]]); return; }
+    var raw = location.hash || '#info', h = raw.replace(/^#\/?/, '');
+    var p = raw.indexOf('#/') === 0 ? h.split('/') : h.split('-');
+    if (LEGACY[p[0]]) { location.replace(p[0] === 'guide' && p[1] ? '#info-ref-' + p[1] : LEGACY[p[0]]); return; }
+    if (raw.indexOf('#/') === 0 && p[0] !== 'wine' && !LEGACY[p[0]]) { location.replace('#' + p.join('-')); return; }
     if (p[0] === 'wine') { location.replace(wineHref(p[1])); return; }
     var mode = p[0] === 'train' ? 'train' : 'info', tab, view;
     try {
@@ -91,7 +92,7 @@
           default: tab = 'courses'; view = coursesPage();
         }
       }
-    } catch (e) { console.error(e); view = '<p>Something went wrong showing this page.</p><p><a href="#/info">Back to the wines</a></p>'; }
+    } catch (e) { console.error(e); view = '<p>Something went wrong showing this page.</p><p><a href="#info">Back to the wines</a></p>'; }
     drawChrome(mode, tab);
     main.innerHTML = view;
     if (after) { var f = after; after = null; f(); }
@@ -203,10 +204,10 @@
   }
   function winePage(id) {
     var w = byId[id];
-    if (!w) return '<a class="back" href="#/info">‹ All wines</a><p>That wine is no longer on the list.</p>';
+    if (!w) return '<a class="back" href="#info">‹ All wines</a><p>That wine is no longer on the list.</p>';
     var prev = D.wines[w.idx - 1], next = D.wines[w.idx + 1];
     var menuLine = w.menuName && norm(w.menuName) !== norm(w.name.replace(/,/g, '')) ? '<div class="ap">On the menu as <b>' + esc(w.menuName) + '</b></div>' : '';
-    return '<a class="back" href="#/info">‹ All wines</a>' +
+    return '<a class="back" href="#info">‹ All wines</a>' +
       '<div class="wine-h' + rowClass(w) + '"><p class="eyebrow">' + esc(SEC[w.section]) + ' · ' + esc(w.region) + '</p>' + badge(w) +
       '<h1>' + esc(w.name) + '</h1><div class="ap">' + esc(w.appellation) + ' · ' + esc(w.vintage) + (w.size ? ' · ' + esc(w.size) : '') + '</div>' + menuLine +
       (w.menuNote ? '<div class="ap muted">' + esc(w.menuNote) + '</div>' : '') + priceTiles(w) + '</div>' +
@@ -279,7 +280,7 @@
     };
     return '<p class="eyebrow">Info · Steering</p><h1>When a guest says…</h1>' +
       '<p class="lede">Guests usually describe a style, or name a wine we don\'t list. Start with the glass, then trade up. Every glass wine is also sold by the bottle.</p>' +
-      '<a class="callout" href="#/info/ref/sancerre"><b>When a guest asks for Sancerre</b><span>What we pour instead, and how to say it ›</span></a>' +
+      '<a class="callout" href="#info-ref-sancerre"><b>When a guest asks for Sancerre</b><span>What we pour instead, and how to say it ›</span></a>' +
       '<div class="search">' + ICON_SEARCH + '<input id="gq" type="search" placeholder="Search: light, Burgundy, sweet…" autocomplete="off" value="' + esc(guestQ) + '" aria-label="Search guest requests"></div>' +
       '<div id="sl">' + steerHtml() + '</div>';
   }
@@ -294,7 +295,7 @@
     ['about', 'About this app', 'Installing it, updates and your progress']
   ];
   function refPage(p) {
-    var back = '<a class="back" href="#/info/ref">‹ Reference</a>';
+    var back = '<a class="back" href="#info-ref">‹ Reference</a>';
     if (p === 'list') {
       return back + '<p class="eyebrow">Reference</p><h1>How the list works</h1>' +
         '<p class="lede">' + D.wines.length + ' wines, ' + BTG.length + ' of them by the glass. Learn the glass wines first: they cover most of the evening.</p>' +
@@ -355,14 +356,15 @@
         '<p class="muted small">Questions about the list: ask Simon.</p></div>';
     }
     return '<p class="eyebrow">Info</p><h1>Reference</h1><p class="lede">The house rules and the background to the list, to look up when you need it.</p>' +
-      '<ul class="menu">' + REF.map(function (g) { return '<li><a href="#/info/ref/' + g[0] + '"><b>' + esc(g[1]) + '</b><span>' + esc(g[2]) + '</span></a></li>'; }).join('') + '</ul>' +
-      '<a class="callout alt" href="#/train"><b>Learning the list?</b><span>Go to Training for courses, quizzes and flashcards ›</span></a>';
+      '<ul class="menu">' + REF.map(function (g) { return '<li><a href="#info-ref-' + g[0] + '"><b>' + esc(g[1]) + '</b><span>' + esc(g[2]) + '</span></a></li>'; }).join('') + '</ul>' +
+      '<a class="callout alt" href="#train"><b>Learning the list?</b><span>Go to Training for courses, quizzes and flashcards ›</span></a>';
   }
   document.addEventListener('click', function (e) {
-    if (e.target.id === 'reset' && confirm('Reset all your training progress on this phone?')) {
-      ['boxes', 'misses', 'best', 'lessons'].forEach(function (k) { store.set(k, k === 'misses' ? [] : {}); });
-      toast('Progress reset');
-    }
+    if (e.target.id !== 'reset') return;
+    if (!e.target.dataset.sure) { e.target.dataset.sure = '1'; e.target.textContent = 'Tap again to reset everything'; return; }
+    ['boxes', 'misses', 'best', 'lessons'].forEach(function (k) { store.set(k, k === 'misses' ? [] : {}); });
+    e.target.textContent = 'Reset my progress'; delete e.target.dataset.sure;
+    toast('Progress reset');
   });
   function fmtDate(iso) { var d = new Date(iso + 'T12:00:00'); return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }); }
   function valueEnd() {
@@ -406,32 +408,32 @@
     return '<p class="eyebrow">Training</p><h1>Learn the list</h1>' +
       '<p class="lede">Short lessons on tasting, styles, grapes and regions, all built around the wines we pour. Each lesson ends with a short quiz; get ' + Math.round(PASS * 100) + '% to tick it off.</p>' +
       '<div class="overall"><div><b>' + done + ' of ' + total + '</b> lessons done</div>' + meter(done, total) + '</div>' +
-      (nx ? '<a class="callout" href="#/train/lesson/' + nx.c.id + '/' + nx.l.id + '"><b>' + (done ? 'Carry on' : 'Start here') + ': ' + esc(nx.l.title) + '</b><span>' + esc(nx.c.title) + ' ›</span></a>' : '<p class="done-all">Every lesson done. Keep sharp with the quizzes.</p>') +
+      (nx ? '<a class="callout" href="#train-lesson-' + nx.c.id + '-' + nx.l.id + '"><b>' + (done ? 'Carry on' : 'Start here') + ': ' + esc(nx.l.title) + '</b><span>' + esc(nx.c.title) + ' ›</span></a>' : '<p class="done-all">Every lesson done. Keep sharp with the quizzes.</p>') +
       '<div class="tgrid">' + D.courses.map(function (c) {
         var d = courseDone(c);
-        return '<a class="tcard" href="#/train/course/' + c.id + '"><b>' + esc(c.title) + '</b><span>' + esc(c.blurb) + '</span>' + meter(d, c.lessons.length) + '<small>' + d + ' of ' + c.lessons.length + ' lessons done</small></a>';
+        return '<a class="tcard" href="#train-course-' + c.id + '"><b>' + esc(c.title) + '</b><span>' + esc(c.blurb) + '</span>' + meter(d, c.lessons.length) + '<small>' + d + ' of ' + c.lessons.length + ' lessons done</small></a>';
       }).join('') + '</div>';
   }
   function coursePage(cid) {
     var c = COURSE[cid];
-    if (!c) return '<a class="back" href="#/train">‹ Courses</a><p>That course does not exist.</p>';
-    return '<a class="back" href="#/train">‹ Courses</a><p class="eyebrow">Course</p><h1>' + esc(c.title) + '</h1><p class="lede">' + esc(c.blurb) + '</p>' +
+    if (!c) return '<a class="back" href="#train">‹ Courses</a><p>That course does not exist.</p>';
+    return '<a class="back" href="#train">‹ Courses</a><p class="eyebrow">Course</p><h1>' + esc(c.title) + '</h1><p class="lede">' + esc(c.blurb) + '</p>' +
       '<ol class="lessons">' + c.lessons.map(function (l, i) {
         var b = lessonBest(c.id, l.id), ok = b != null && b >= PASS;
-        return '<li><a href="#/train/lesson/' + c.id + '/' + l.id + '" class="' + (ok ? 'done' : '') + '"><span class="n">' + (ok ? '✓' : i + 1) + '</span><span class="t"><b>' + esc(l.title) + '</b><small>' +
+        return '<li><a href="#train-lesson-' + c.id + '-' + l.id + '" class="' + (ok ? 'done' : '') + '"><span class="n">' + (ok ? '✓' : i + 1) + '</span><span class="t"><b>' + esc(l.title) + '</b><small>' +
           l.cards.length + ' short sections · ' + (l.quiz.length + (l.profiles.length ? 2 : 0)) + ' questions' + (b != null ? ' · best ' + Math.round(b * 100) + '%' : '') + '</small></span></a></li>';
       }).join('') + '</ol>';
   }
   function lessonPage(cid, lid) {
     var c = COURSE[cid], l = c && c.lessons.filter(function (x) { return x.id === lid; })[0];
-    if (!l) return '<a class="back" href="#/train">‹ Courses</a><p>That lesson does not exist.</p>';
+    if (!l) return '<a class="back" href="#train">‹ Courses</a><p>That lesson does not exist.</p>';
     var ws = lessonWines(l);
     var i = c.lessons.indexOf(l), nextL = c.lessons[i + 1];
-    return '<a class="back" href="#/train/course/' + c.id + '">‹ ' + esc(c.title) + '</a><p class="eyebrow">Lesson ' + (i + 1) + ' of ' + c.lessons.length + '</p><h1>' + esc(l.title) + '</h1>' +
+    return '<a class="back" href="#train-course-' + c.id + '">‹ ' + esc(c.title) + '</a><p class="eyebrow">Lesson ' + (i + 1) + ' of ' + c.lessons.length + '</p><h1>' + esc(l.title) + '</h1>' +
       '<div class="lesson">' + l.cards.map(function (k) { return '<section><h3>' + esc(k.h) + '</h3><p>' + k.b + '</p></section>'; }).join('') + '</div>' +
       (ws.length ? '<h2>On our list</h2><div class="picks">' + ws.map(function (id) { return pickChip(id, byId[id].glass ? 'g' : 'b'); }).join('') + '</div>' : '') +
-      '<div class="stack" style="margin-top:22px"><a class="btn primary wide" href="#/train/test/' + c.id + '/' + l.id + '">Take the lesson quiz</a>' +
-      (nextL ? '<a class="btn wide" href="#/train/lesson/' + c.id + '/' + nextL.id + '">Next lesson: ' + esc(nextL.title) + '</a>' : '') + '</div>';
+      '<div class="stack" style="margin-top:22px"><a class="btn primary wide" href="#train-test-' + c.id + '-' + l.id + '">Take the lesson quiz</a>' +
+      (nextL ? '<a class="btn wide" href="#train-lesson-' + c.id + '-' + nextL.id + '">Next lesson: ' + esc(nextL.title) + '</a>' : '') + '</div>';
   }
 
   /* profile lessons get two extra questions built from the list itself */
@@ -451,13 +453,13 @@
   var lq = null;
   function lessonQuizPage(cid, lid) {
     var c = COURSE[cid], l = c && c.lessons.filter(function (x) { return x.id === lid; })[0];
-    if (!l) return '<a class="back" href="#/train">‹ Courses</a><p>That lesson does not exist.</p>';
+    if (!l) return '<a class="back" href="#train">‹ Courses</a><p>That lesson does not exist.</p>';
     var key = cid + '/' + lid;
     if (!lq || lq.key !== key) {
       var qs = l.quiz.map(function (q) { return { q: esc(q.q), o: shuffle(q.o), a: q.a, why: q.why, k: l.title }; }).concat(profileQuestions(l).map(function (q) { q.q = esc(q.q); q.k = l.title; return q; }));
       lq = { key: key, qs: shuffle(qs), i: 0, chosen: null, right: 0, missed: [] };
     }
-    var back = '<a class="back" href="#/train/lesson/' + cid + '/' + lid + '">‹ ' + esc(l.title) + '</a>';
+    var back = '<a class="back" href="#train-lesson-' + cid + '-' + lid + '">‹ ' + esc(l.title) + '</a>';
     if (lq.i >= lq.qs.length) {
       var pct = lq.right / lq.qs.length, all = store.get('lessons', {}), prev = all[key];
       if (prev == null || pct > prev) { all[key] = pct; store.set('lessons', all); }
@@ -466,10 +468,10 @@
       after = function () { document.getElementById('again').addEventListener('click', function () { lq = null; route(); }); };
       return back + '<div class="score"><p class="eyebrow">' + esc(l.title) + '</p><div class="big">' + r + ' / ' + n + '</div><p>' +
         (passed ? 'Lesson done. ✓' : 'You need ' + Math.ceil(PASS * n) + ' to tick this lesson off. Have another read and try again.') + '</p></div>' +
-        '<div class="stack">' + (passed && nextL ? '<a class="btn primary wide" href="#/train/lesson/' + cid + '/' + nextL.id + '">Next lesson: ' + esc(nextL.title) + '</a>' : '') +
-        (passed && !nextL ? '<a class="btn primary wide" href="#/train">Back to the courses</a>' : '') +
+        '<div class="stack">' + (passed && nextL ? '<a class="btn primary wide" href="#train-lesson-' + cid + '-' + nextL.id + '">Next lesson: ' + esc(nextL.title) + '</a>' : '') +
+        (passed && !nextL ? '<a class="btn primary wide" href="#train">Back to the courses</a>' : '') +
         '<button type="button" class="btn wide' + (passed ? '' : ' primary') + '" id="again">Try the quiz again</button>' +
-        '<a class="btn wide" href="#/train/lesson/' + cid + '/' + lid + '">Read the lesson again</a></div>';
+        '<a class="btn wide" href="#train-lesson-' + cid + '-' + lid + '">Read the lesson again</a></div>';
     }
     return back + quizBody(lq, l.title, function () { lessonQuizPage(cid, lid); });
   }
@@ -590,11 +592,11 @@
     return '<p class="eyebrow">Training · Practice</p><h1>Quizzes</h1><p class="lede">Ten questions at a time, built from the list as it is today. Wrong answers go into a flashcard deck so you can go over them.</p>' +
       '<div class="tgrid">' + Object.keys(QUIZ).map(function (k) {
         var q = QUIZ[k];
-        return '<a class="tcard" href="#/train/quiz/' + k + '"><b>' + esc(q.t) + '</b><span>' + esc(q.d) + '</span><small>' + (best[k] != null ? 'Best: ' + best[k] + ' / 10' : '10 questions') + '</small></a>';
+        return '<a class="tcard" href="#train-quiz-' + k + '"><b>' + esc(q.t) + '</b><span>' + esc(q.d) + '</span><small>' + (best[k] != null ? 'Best: ' + best[k] + ' / 10' : '10 questions') + '</small></a>';
       }).join('') + '</div>';
   }
   function quizPage(mode) {
-    var back = '<a class="back" href="#/train/quiz">‹ Quizzes</a>';
+    var back = '<a class="back" href="#train-quiz">‹ Quizzes</a>';
     if (!QUIZ[mode]) return back + '<p>That quiz does not exist.</p>';
     if (!qz || qz.mode !== mode) qz = newQuiz(mode);
     if (qz.i >= qz.qs.length) {
@@ -607,7 +609,7 @@
         (r === 10 ? 'Perfect round.' : r >= 8 ? 'Very good.' : r >= 5 ? 'Getting there.' : 'Keep at it: try the flashcards first.') + (hadBest && isBest ? ' A new best.' : '') + '</p></div>' +
         (missed.length ? '<h2>To look at again</h2><ul class="missed">' + missed.map(function (w) { return '<li><a href="' + wineHref(w.id) + '">' + esc(w.name) + '<span>' + esc(w.appellation) + '</span></a></li>'; }).join('') + '</ul>' : '') +
         '<div class="stack"><button type="button" class="btn primary wide" id="again">Play again</button>' +
-        (missed.length ? '<a class="btn wide" href="#/train/cards/misses">Flashcards of your misses</a>' : '') + '<a class="btn wide" href="#/train/quiz">All quizzes</a></div>';
+        (missed.length ? '<a class="btn wide" href="#train-cards-misses">Flashcards of your misses</a>' : '') + '<a class="btn wide" href="#train-quiz">All quizzes</a></div>';
     }
     return back + quizBody(qz, QUIZ[mode].t);
   }
@@ -632,7 +634,7 @@
   function decksPage() {
     var deckTile = function (k) {
       var d = DECKS[k], cs = d.cards(), kn = known(cs);
-      return '<a class="tcard' + (k === 'misses' ? ' review' : '') + '" href="#/train/cards/' + k + '"><b>' + esc(d.t) + '</b><span>' + esc(d.d) + '</span>' +
+      return '<a class="tcard' + (k === 'misses' ? ' review' : '') + '" href="#train-cards-' + k + '"><b>' + esc(d.t) + '</b><span>' + esc(d.d) + '</span>' +
         (k === 'misses' ? '' : meter(kn, cs.length) + '<small>' + kn + ' of ' + cs.length + ' known</small>') + '</a>';
     };
     return '<p class="eyebrow">Training · Practice</p><h1>Flashcards</h1><p class="lede">Read the front, say the answer to yourself, then turn it over. Cards you know come back less often.</p>' +
@@ -641,7 +643,7 @@
   }
   var fc = null;
   function cardsPage(deck) {
-    var d = DECKS[deck], back = '<a class="back" href="#/train/cards">‹ Flashcards</a>';
+    var d = DECKS[deck], back = '<a class="back" href="#train-cards">‹ Flashcards</a>';
     if (!d) return back + '<p>That deck does not exist.</p>';
     if (!fc || fc.deck !== deck) {
       var boxes = store.get('boxes', {});
@@ -652,7 +654,7 @@
     if (fc.i >= fc.cards.length) {
       var r = fc.right, n = fc.cards.length; fc = null;
       return back + '<div class="score"><p class="eyebrow">' + esc(d.t) + '</p><div class="big">' + r + ' / ' + n + '</div><p>cards you knew this time</p></div>' +
-        '<div class="stack"><a class="btn primary wide" href="#/train/cards/' + deck + '">Another round</a><a class="btn wide" href="#/train/cards">All decks</a></div>';
+        '<div class="stack"><a class="btn primary wide" href="#train-cards-' + deck + '">Another round</a><a class="btn wide" href="#train-cards">All decks</a></div>';
     }
     var c = fc.cards[fc.i];
     after = function () {

@@ -2,7 +2,7 @@
   "name": "Bar Finch Wine",
   "short_name": "Finch Wine",
   "description": "The Bar Finch wine list for the floor team: every wine, how to sell it, and training games.",
-  "start_url": "./#/wines",
+  "start_url": "./#info",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",

@@ -1,6 +1,6 @@
 /* Offline support. Bump VERSION whenever any file changes (tools/build_data.py does it for data updates),
    so phones fetch the new list and offer to reload. */
-var VERSION = 'finch-2026-10-31-ee86b892';
+var VERSION = 'finch-2026-11-06-7a55fa4e';
 var FILES = [
   './', 'index.html', 'css/app.css', 'js/app.js', 'js/data.js', 'manifest.webmanifest',
   'fonts/Poppins-Light.ttf', 'fonts/Poppins-LightItalic.ttf', 'fonts/Poppins-Medium.ttf',

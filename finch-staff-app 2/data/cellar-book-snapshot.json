@@ -1,7 +1,7 @@
 {
  "source": "Bar Finch Cellar Book",
- "takenAt": "2026-10-29",
- "shelvesAt": "2026-10-29T17:40:00.000Z",
+ "takenAt": "2026-11-06",
+ "shelvesAt": "2026-11-06T15:18:23.455Z",
  "regionOrder": [
   "Champagne",
   "Burgundy",
@@ -40,6 +40,12 @@
     ],
     "L": [
      [
+      2,
+      [
+       "w003"
+      ]
+     ],
+     [
       1,
       [
        "w005"
@@ -48,13 +54,7 @@
      [
       1,
       [
-       "w003"
-      ]
-     ],
-     [
-      2,
-      [
-       "w013"
+       "w009"
       ]
      ],
      [
@@ -113,13 +113,7 @@
       ]
      ],
      [
-      1,
-      [
-       "w009"
-      ]
-     ],
-     [
-      2,
+      3,
       [
        "w013"
       ]
@@ -179,13 +173,19 @@
       ]
      ],
      [
-      3,
+      1,
       [
-       "w034"
+       "w043"
       ]
      ],
      [
       1,
+      [
+       "w044"
+      ]
+     ],
+     [
+      2,
       [
        "w030"
       ]
@@ -195,8 +195,8 @@
      [
       0,
       [
-       "w039",
-       "w041"
+       "w014",
+       "w045"
       ]
      ]
     ],
@@ -204,8 +204,8 @@
      [
       0,
       [
-       "w019",
-       "w004"
+       "w004",
+       "w039"
       ]
      ]
     ],
@@ -213,8 +213,8 @@
      [
       0,
       [
-       "w014",
-       "w011"
+       "w019",
+       "w042"
       ]
      ]
     ],
@@ -222,6 +222,7 @@
      [
       0,
       [
+       "w011",
        "w052"
       ]
      ]
@@ -234,13 +235,7 @@
       ]
      ],
      [
-      2,
-      [
-       "w042"
-      ]
-     ],
-     [
-      2,
+      4,
       [
        "w034"
       ]
@@ -252,17 +247,11 @@
      [
       1,
       [
-       "w035"
+       "w033"
       ]
      ],
      [
-      1,
-      [
-       "w037"
-      ]
-     ],
-     [
-      2,
+      3,
       [
        "w029"
       ]
@@ -316,8 +305,7 @@
      [
       0,
       [
-       "w046",
-       "w045"
+       "w038"
       ]
      ]
     ],
@@ -325,14 +313,14 @@
      [
       0,
       [
-       "w044",
-       "w043"
+       "w041",
+       "w046"
       ]
      ]
     ],
     "T": [
      [
-      2,
+      1,
       [
        "w040"
       ]
@@ -340,14 +328,18 @@
      [
       2,
       [
-       "w038"
+       "w037"
       ]
      ],
      [
       1,
       [
-       "w033"
+       "w035"
       ]
+     ],
+     [
+      1,
+      []
      ],
      [
       3,
@@ -619,7 +611,7 @@
    "appellation": "Pessac-Léognan Blanc, Bordeaux",
    "region": "Bordeaux",
    "menuNote": "",
-   "bottle": 151,
+   "bottle": 150,
    "glass": 25,
    "g175": 35,
    "carafe": null
@@ -648,9 +640,9 @@
    "vintage": "2024",
    "ml": 750,
    "pour": "Y",
-   "producer": "Finch Bianco",
-   "cuvee": "Vermentino",
-   "appellation": "Tuscany",
+   "producer": "Tenuta di Montefoscoli",
+   "cuvee": "Fontamaggiore",
+   "appellation": "Vermentino, Tuscany",
    "region": "Italy",
    "menuNote": "",
    "bottle": 114,
@@ -670,7 +662,7 @@
    "appellation": "Pouilly-Fumé, Loire",
    "region": "Loire",
    "menuNote": "",
-   "bottle": 139,
+   "bottle": 138,
    "glass": 23,
    "g175": 32,
    "carafe": 92
@@ -738,7 +730,7 @@
    "appellation": "Châteauneuf-du-Pape Blanc, Rhône",
    "region": "Rhône",
    "menuNote": "",
-   "bottle": 197,
+   "bottle": 198,
    "glass": 33,
    "g175": 46,
    "carafe": null
@@ -874,7 +866,7 @@
    "appellation": "Corton-Charlemagne Grand Cru, Burgundy",
    "region": "Burgundy",
    "menuNote": "",
-   "bottle": 379,
+   "bottle": 378,
    "glass": 63,
    "g175": 88,
    "carafe": null
@@ -976,10 +968,10 @@
    "appellation": "Coteaux Bourguignons, Burgundy",
    "region": "Burgundy",
    "menuNote": "",
-   "bottle": 101,
+   "bottle": 102,
    "glass": 17,
    "g175": 24,
-   "carafe": 67
+   "carafe": 68
   },
   {
    "id": "w032",
@@ -1022,9 +1014,9 @@
    "vintage": "2023",
    "ml": 750,
    "pour": "Y",
-   "producer": "Finch Rosso",
-   "cuvee": "Sangiovese",
-   "appellation": "Tuscany",
+   "producer": "Tenuta di Montefoscoli",
+   "cuvee": "Santandrea",
+   "appellation": "Sangiovese, Tuscany",
    "region": "Italy",
    "menuNote": "",
    "bottle": 114,
@@ -1299,7 +1291,7 @@
    "appellation": "Margaux, Bordeaux",
    "region": "Bordeaux",
    "menuNote": "",
-   "bottle": 380,
+   "bottle": 378,
    "glass": 63,
    "g175": 88,
    "carafe": null
@@ -1384,7 +1376,7 @@
    "appellation": "Franciacorta DOCG, Lombardy",
    "region": "Italy",
    "menuNote": "",
-   "bottle": 103,
+   "bottle": 102,
    "glass": 17,
    "g175": 24,
    "carafe": null
@@ -1424,23 +1416,6 @@
    "carafe": null
   },
   {
-   "id": "w058",
-   "section": "sparkling",
-   "style": "Champagne",
-   "vintage": "NV",
-   "ml": 750,
-   "pour": "Y",
-   "producer": "Billecart-Salmon",
-   "cuvee": "Brut Réserve",
-   "appellation": "Champagne",
-   "region": "Champagne",
-   "menuNote": "",
-   "bottle": 144,
-   "glass": 24,
-   "g175": 34,
-   "carafe": null
-  },
-  {
    "id": "w059",
    "section": "sparkling",
    "style": "English Sparkling Rosé",
@@ -1469,7 +1444,7 @@
    "appellation": "Blanc de Blancs Grand Cru, Oger, Champagne",
    "region": "Champagne",
    "menuNote": "",
-   "bottle": 193,
+   "bottle": 192,
    "glass": 32,
    "g175": 45,
    "carafe": null
@@ -1486,7 +1461,7 @@
    "appellation": "Champagne",
    "region": "Champagne",
    "menuNote": "",
-   "bottle": 181,
+   "bottle": 180,
    "glass": 30,
    "g175": 42,
    "carafe": null
@@ -1639,7 +1614,7 @@
    "appellation": "Douro, Portugal",
    "region": "Portugal",
    "menuNote": "",
-   "bottle": 129,
+   "bottle": 130,
    "glass": 13,
    "g175": null,
    "carafe": null
@@ -1656,7 +1631,7 @@
    "appellation": "Sauternes, Bordeaux",
    "region": "Bordeaux",
    "menuNote": "",
-   "bottle": 119,
+   "bottle": 120,
    "glass": 12,
    "g175": null,
    "carafe": null
@@ -1724,8 +1699,76 @@
    "appellation": "Vin Santo di Montepulciano, Tuscany",
    "region": "Italy",
    "menuNote": "",
-   "bottle": 193,
+   "bottle": 195,
    "glass": 39,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w076",
+   "section": "sparkling",
+   "style": "Champagne",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Devaux",
+   "cuvee": "Cuvée D",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 144,
+   "glass": 24,
+   "g175": 34,
+   "carafe": null
+  },
+  {
+   "id": "w077",
+   "section": "sparkling",
+   "style": "Champagne Rosé",
+   "vintage": "NV",
+   "ml": 750,
+   "pour": "Y",
+   "producer": "Devaux",
+   "cuvee": "D Rosé",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 168,
+   "glass": 28,
+   "g175": 39,
+   "carafe": null
+  },
+  {
+   "id": "w078",
+   "section": "sparkling",
+   "style": "Champagne (magnum)",
+   "vintage": "NV",
+   "ml": 1500,
+   "pour": "",
+   "producer": "Devaux",
+   "cuvee": "Cuvée D, Aged 7 Years",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 288,
+   "glass": null,
+   "g175": null,
+   "carafe": null
+  },
+  {
+   "id": "w079",
+   "section": "sparkling",
+   "style": "Champagne (prestige cuvée)",
+   "vintage": "2013",
+   "ml": 750,
+   "pour": "",
+   "producer": "Devaux",
+   "cuvee": "Sténopé",
+   "appellation": "Champagne",
+   "region": "Champagne",
+   "menuNote": "",
+   "bottle": 294,
+   "glass": null,
    "g175": null,
    "carafe": null
   }
