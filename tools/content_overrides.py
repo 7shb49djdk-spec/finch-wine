@@ -1,0 +1,33 @@
+# Corrections and additions to the researchers' output, applied when tools/curate_research.py runs.
+# style: Simon's own tasting calls win over the sources (Saperavi tannin, the Châteauneuf Blanc's weight).
+# vintageNote: short, staff-facing notes written from the research (only where the vintage matters).
+OVERRIDES = {
+    'w033': dict(style=dict(tannin='high')),
+    'w017': dict(style=dict(profile='Rich & oaked white')),
+    'w064': dict(vintageNote="2018 was hot and sunny in Champagne, with a large, ripe crop: the wine is round and full."),
+    'w065': dict(vintageNote="2019 was a smaller harvest than 2018, with higher acidity and more tension; expected to age longer."),
+    'w066': dict(vintageNote="2015 was a hot, dry year in Champagne. Already drinking well, and it will keep improving."),
+    'w067': dict(vintageNote="2015 was hot and dry, with rain at the end of summer that kept the freshness: ripe, concentrated and very chalky. Still tight now; it will improve for years."),
+    'w004': dict(vintageNote="2020 was warm and early, but the fruit kept vibrant natural acidity."),
+    'w024': dict(vintageNote="A wet season, then summery weather while the grapes ripened; picking started 15 days earlier than planned."),
+    'w025': dict(vintageNote="2022 was generous. The wine is expressive but still young: critics see it at its best from around 2027–2030."),
+    'w005': dict(vintageNote="2023 was the estate's largest harvest; a wet September, then late sunshine ripened the fruit fully."),
+    'w014': dict(vintageNote="A difficult, rainy year in Friuli: the blend leans more on Sauvignon, and botrytis touched some of the Friulano, which shows as a honeyed note."),
+    'w022': dict(vintageNote="2024 was a demanding, low-yield year in the Côte de Beaune, with freshness and acidity to the fore."),
+    'w023': dict(vintageNote="A wet spring, then heat from mid-July with big swings between day and night; the Chardonnay was picked in late August."),
+    'w035': dict(vintageNote="A warm, ripe Bordeaux vintage, hence the 14.5% alcohol."),
+    'w037': dict(vintageNote="A warm, ripe year on the Right Bank."),
+    'w038': dict(vintageNote="2004 was an excellent Rioja vintage, and the wine is at its peak now."),
+    'w040': dict(vintageNote="A warm, wet winter and an uneven flowering, then July heat eased by summer rain; picking spread over four weeks."),
+    'w043': dict(vintageNote="Young: expected to be at its best from about 2030."),
+    'w045': dict(vintageNote="A warm summer with cool nights: polished tannins, approachable already."),
+    'w046': dict(vintageNote="A warm year with cool nights; just entering its drinking window now."),
+    'w047': dict(vintageNote="A highly rated vintage, built to last into the 2040s."),
+    'w048': dict(vintageNote="A ripe year in Champagne: vivid fruit, now turning autumnal and earthy."),
+    'w049': dict(vintageNote="Warm, with four heatwaves but timely rain, and healthy fruit."),
+    'w050': dict(vintageNote="A cool, damp, late year at Château Margaux, with a smaller crop than 2007."),
+    'w054': dict(vintageNote="A hot, dry summer with cool nights gave gradual ripening and good acidity."),
+    'w070': dict(vintageNote="Hot and very dry in the Douro: powerful, dense wines."),
+    'w071': dict(vintageNote="2018 gave round, medium-weight Sauternes for drinking young, rather than a great botrytis year."),
+    'w072': dict(vintageNote="A rich, highly concentrated year, with critics' scores of 96–97. At 17 it is still young for Climens."),
+}
